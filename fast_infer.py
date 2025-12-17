@@ -251,9 +251,9 @@ else:
     transformer_state_dict = torch.load(transformer_path, map_location="cpu", weights_only=True)
 transformer_state_dict = transformer_state_dict["state_dict"] if "state_dict" in transformer_state_dict else transformer_state_dict
 m, u = transformer.load_state_dict(transformer_state_dict, strict=False)
-print(f"ip-transformer missing keys: {len(m)}, unexpected keys: {len(u)}")
-print(f"ip-transformer missing keys: {m}")
-print(f"ip-transformer unexpected keys: {u}")
+print(f"portrait transformer missing keys: {len(m)}, unexpected keys: {len(u)}")
+print(f"portrait transformer missing keys: {m}")
+print(f"portrait transformer unexpected keys: {u}")
 
 # Get Vae
 vae = AutoencoderKLWan.from_pretrained(
