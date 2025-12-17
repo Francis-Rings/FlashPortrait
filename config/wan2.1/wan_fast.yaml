@@ -45,13 +45,13 @@ image_encoder_kwargs:
 
 tiny_vae_kwargs:
   use_tiny_vae: true
-  tiny_vae_path: pretrained_models/taew2_1.pth
+  tiny_vae_path: checkpoints/FlashPortrait/fast_vae.pth
   tiny_vae_parallel: false
   tiny_vae_need_scaled: false
 
 step_distill_kwargs:
   enable_step_distill: true
-  step_distill_lora_path: pretrained_models/Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors
+  step_distill_lora_path: checkpoints/FlashPortrait/fast_lora_rank64.safetensors
   step_distill_lora_strength: 1.0
   denoising_step_list:
     - 1000  
