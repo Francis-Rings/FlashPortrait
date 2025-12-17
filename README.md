@@ -102,8 +102,7 @@ FlashPortrait/
 │   └── Wan2.1-I2V-14B-720P
 ├── infer.py
 ├── fast_infer.py
-├── train_single_machine.py
-├── train_multiple_machine.sh
+├── train_portrait.py
 ├── bin_convert_pt.py
 ├── train_single_machine.sh
 ├── train_multiple_machine.sh
