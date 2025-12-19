@@ -1,6 +1,6 @@
 # FlashPortrait
 
-<a href='https://francis-rings.github.io/FlashPortrait'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='http://arxiv.org/abs/2512.16900'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://huggingface.co/FrancisRing/FlashPortrait/tree/main'><img src='https://img.shields.io/badge/HuggingFace-Model-orange'></a> <a href='https://www.youtube.com/watch?v='><img src='https://img.shields.io/badge/YouTube-Watch-red?style=flat-square&logo=youtube'></a> <a href='https://www.bilibili.com/video/BV1Gfq9BAEvo'><img src='https://img.shields.io/badge/Bilibili-Watch-blue?style=flat-square&logo=bilibili'></a> 
+<a href='https://francis-rings.github.io/FlashPortrait'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='http://arxiv.org/abs/2512.16900'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://huggingface.co/FrancisRing/FlashPortrait/tree/main'><img src='https://img.shields.io/badge/HuggingFace-Model-orange'></a> <a href='https://www.youtube.com/watch?v=woSzRXlXyiY'><img src='https://img.shields.io/badge/YouTube-Watch-red?style=flat-square&logo=youtube'></a> <a href='https://www.bilibili.com/video/BV1Gfq9BAEvo'><img src='https://img.shields.io/badge/Bilibili-Watch-blue?style=flat-square&logo=bilibili'></a> 
 
 FlashPortrait: 6$\times$ Faster Infinite Portrait Animation with Adaptive Latent Prediction
 <br/>
