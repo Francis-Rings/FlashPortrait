@@ -1,6 +1,6 @@
 # FlashPortrait
 
-<a href='https://francis-rings.github.io/FlashPortrait'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='https://arxiv.org/abs/'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://huggingface.co/FrancisRing/FlashPortrait/tree/main'><img src='https://img.shields.io/badge/HuggingFace-Model-orange'></a> <a href='https://www.youtube.com/watch?v=6lhvmbzvv3Y'><img src='https://img.shields.io/badge/YouTube-Watch-red?style=flat-square&logo=youtube'></a> <a href='https://www.bilibili.com/video/BV1hUt9z4EoQ'><img src='https://img.shields.io/badge/Bilibili-Watch-blue?style=flat-square&logo=bilibili'></a> 
+<a href='https://francis-rings.github.io/FlashPortrait'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='http://arxiv.org/abs/2512.16900'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://huggingface.co/FrancisRing/FlashPortrait/tree/main'><img src='https://img.shields.io/badge/HuggingFace-Model-orange'></a> <a href='https://www.youtube.com/watch?v=6lhvmbzvv3Y'><img src='https://img.shields.io/badge/YouTube-Watch-red?style=flat-square&logo=youtube'></a> <a href='https://www.bilibili.com/video/BV1hUt9z4EoQ'><img src='https://img.shields.io/badge/Bilibili-Watch-blue?style=flat-square&logo=bilibili'></a> 
 
 FlashPortrait: 6$\times$ Faster Infinite Portrait Animation with Adaptive Latent Prediction
 <br/>
@@ -294,7 +294,7 @@ If you find our work useful, <b>please consider giving a star ⭐ to this github
 @article{tu2025flashportrait,
   title={FlashPortrait: 6$\times$ Faster Infinite Portrait Animation with Adaptive Latent Prediction},
   author={Tu, Shuyuan and Pan, Yueming and Huang, Yinming and Han, Xintong and Xing, Zhen and Dai, Qi and Qiu, Kai and Luo, Chong and Wu, Zuxuan},
-  journal={arXiv preprint arXiv:},
+  journal={arXiv preprint arXiv:2512.16900},
   year={2025}
 }
 ```
