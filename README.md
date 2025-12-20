@@ -112,8 +112,10 @@ FlashPortrait/
 ### 🧱 Model inference
 A sample configuration for testing is provided as `infer.py` and `fast_infer.py`. You can also easily modify the various configurations according to your needs.
 
-```
-bash inference.sh
+```bash
+python infer.py
+# or
+python fast_infer.py
 ```
 Wan2.1-14B-based FlashPortrait supports video-driven portrait video generation at various resolution settings: 512x512, 480x832, 832x480, 720x720, 720x1280, and 1280x720. You can modify "max_size" in `infer.py` to set the resolution of the animation. "--validation_image_start", "--validation_driven_video_path", and "--prompt" in `infer.py` refer to the path of the given reference image, the path of the driven audio, and the text prompts respectively.
 Prompts are also very important. It is recommended to `[Description of first frame]-[Description of human behavior]-[Description of background (optional)]`.
