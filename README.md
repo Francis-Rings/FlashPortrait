@@ -58,6 +58,7 @@ utilizes higher-order latent derivatives at the current timestep to directly pre
 Experiments on benchmarks show the effectiveness of FlashPortrait both qualitatively and quantitatively.
 
 ## News
+* `[2026-01-10]`:🔥 The multi-GPU inference code has been updated, fixing sequence-length inconsistency issues and improving stability for distributed inference.
 * `[2025-12-24]`:🔥 The [ComfyUI implementation of FlashPortrait](https://github.com/okdalto/ComfyUI-FlashPortrait) is released! Many thanks to [@okdalto](https://github.com/okdalto) for his contribution! Other codes will be released very soon. Stay tuned!
 * `[2025-12-15]`:🔥 The project page, code, technical report and [a basic model checkpoint](https://huggingface.co/FrancisRing/FlashPortrait/tree/main) are released. Further acceleration part (Adaptive Latent Prediction) will be released very soon. Stay tuned!
 
@@ -65,7 +66,7 @@ Experiments on benchmarks show the effectiveness of FlashPortrait both qualitati
 - [x] FlashPortrait-14B
 - [x] Inference Code
 - [x] Training Code
-- [ ] Multiple-GPU Inference Code
+- [x] Multiple-GPU Inference Code
 - [ ] Inference Code with Adaptive Latent Prediction
 
 ## 🔑 Quickstart
@@ -113,6 +114,7 @@ FlashPortrait/
 ### 🧱 Model inference
 A sample configuration for testing is provided as `infer.py` and `fast_infer.py`. You can also easily modify the various configurations according to your needs.
 
+For **single-GPU inference**, simply run:
 ```bash
 python infer.py
 # or
@@ -127,6 +129,16 @@ Notably, the recommended `--num_inference_steps` range is [30-50], more steps br
 
 We provide 6 cases in different resolution settings in `path/FlashPortrait/examples` for validation. ❤️❤️Please feel free to try it out and enjoy the endless entertainment of infinite-length portrait video generation❤️❤️!
 
+🔥 **Multi-GPU inference**
+
+If you have **multiple GPUs**, FlashPortrait supports **multi-GPU distributed inference** to accelerate generation.
+You need to modify `ulysses_degree` and `ring_degree` in infer.py.
+These two parameters must satisfy: ulysses_degree*ring_degree=total number of GPUs.For example, if you have 8 GPUs, you can set `--ulysses_degree=4` and `--ring_degree=2`.
+Then run multi-GPU inference with:
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 --master_port=29500 infer.py
+```
+Optionally, you can enable FSDP for the DiT model by setting `fsdp_dit=True` in infer.py, which can further reduce GPU memory consumption during multi-GPU inference.
 #### 💡Tips
 - `fast_infer.py` has faster inference speed, which has the same configuration settings as `infer.py`.
 
