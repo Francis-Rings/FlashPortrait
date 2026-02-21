@@ -58,6 +58,7 @@ utilizes higher-order latent derivatives at the current timestep to directly pre
 Experiments on benchmarks show the effectiveness of FlashPortrait both qualitatively and quantitatively.
 
 ## News
+* `[2026-02-21]`:🔥 FlashPortrait is accepted by CVPR2026🎉🎉🎉. 
 * `[2026-01-10]`:🔥 The multi-GPU inference code has been updated, fixing sequence-length inconsistency issues and improving stability for distributed inference.
 * `[2025-12-24]`:🔥 The [ComfyUI implementation of FlashPortrait](https://github.com/okdalto/ComfyUI-FlashPortrait) is released! Many thanks to [@okdalto](https://github.com/okdalto) for his contribution! Other codes will be released very soon. Stay tuned!
 * `[2025-12-15]`:🔥 The project page, code, technical report and [a basic model checkpoint](https://huggingface.co/FrancisRing/FlashPortrait/tree/main) are released. Further acceleration part (Adaptive Latent Prediction) will be released very soon. Stay tuned!
